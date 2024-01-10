@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #334a97; /* Cor de fundo azul escuro */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilizando a barra de cabeçalho */
+header {
+    background-color: #1a1924; /* Cor de fundo azul escuro */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 0; /* Adicionando preenchimento vertical de 10px */
+    text-align: center; /* Centralizando o conteúdo */
+}
+
+/* Estilizando o título dentro do cabeçalho */
+header h1 {
+    margin: 0; /* Removendo margem superior do título */
+    font-size: 36px; /* Definindo tamanho da fonte */
+}
+
+/* Estilizando parágrafos dentro do cabeçalho */
+header p {
+    margin: 5px 0 0; /* Adicionando margens ao parágrafo */
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    background-color: #323894; /* a brabra*/
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 0; /* Adicionando preenchimento vertical de 10px */
+    text-align: center; /* Centralizando o conteúdo */
+    border-bottom: 2px solid #36454f; /* Adicionando uma borda inferior azul escuro */
+    
+}
+
+/* Estilizando a lista não ordenada dentro da navegação */
+nav ul {
+    list-style: none; /* Removendo marcadores de lista */
+    margin: 0; /* Removendo margem externa da lista */
+    margin-left: 80px;
+    padding: 0; /* Removendo preenchimento interno da lista */
+    text-align: left; /* Alinhando texto à esquerda */
+    
+}
+
+/* Estilizando itens da lista dentro da navegação */
+nav ul li {
+    display: inline-block; /* Exibindo itens lado a lado */
+    margin-right: 20px; /* Adicionando margem à direita entre os itens */
+}
+
+/* Estilizando links dentro da navegação */
+nav a {
+    text-decoration: none; /* Removendo decoração de texto */
+    color: #fff; /* Cor do texto branco */
+    font-weight: bold; /* Definindo a espessura da fonte como negrito */
+    font-size: 20px; /* Definindo tamanho da fonte */
+    
+    transition: color 0.3s ease; /* Adicionando transição de cor ao texto */
+}
+
+/* Estilizando links quando o mouse passa sobre eles */
+nav a:hover {
+    color: #db3005; /* Mudando a cor do texto ao passar o mouse para verde claro */
+}
+
+/* Estilizando a seção de conteúdo geral */
+.container {
+    max-width: 100%; /* Definindo a largura máxima do contêiner */
+    margin: 20px 0; /* Centralizando o contêiner na página */
+    padding: 0px; /* Removendo preenchimento do contêiner */
+}
+
+/* Estilizando a seção de boas-vindas */
+.welcome-section {
+    display: flex; /* Exibindo os elementos como um contêiner flexível */
+    justify-content: space-between; /* Distribuindo o espaço entre os elementos */
+    align-items: center; /* Alinhando os itens verticalmente no centro */
+    margin-left: 80px;
+    margin-bottom: 100px; /* Adicionando margem inferior de 200px */
+
+
+}
+
+/* Estilizando o conteúdo da seção de boas-vindas */
+.welcome-content {
+    flex: 1; /* Ocupando o espaço disponível */
+}
+.welcome-content p{
+    font-size: 20px;
+    margin-left: 80px;
+}
+.welcome-content h2 {
+    font-size: 75px;
+    color: #e5e4e6;
+    margin-bottom: 10px;
+    margin-left: 78px;
+    overflow: hidden; /* Garante que o texto não apareça antes da animação começar */
+    white-space: nowrap; /* Impede a quebra de linha */
+    border-right: 4px solid #24850b; /* Adiciona o cursor de digitação */
+    animation: typing 2s steps(28) forwards, blink 1s 1s infinite; /* Adiciona 'forwards' para manter o estado final da animação de digitação */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 94%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Faz a borda ficar transparente no meio da animação */
+    }
+}
+
+/* Estilizando o contêiner de animação (lottie) */
+.lottie-container {
+    flex: 1; /* Ocupando o espaço disponível */
+    text-align: right; /* Alinhando o texto à direita */
+}
+
+/* Estilizando o player lottie dentro do contêiner */
+.lottie-container dotlottie-player {
+    width: 300px; /* Definindo largura do player lottie */
+    height: 300px; /* Definindo altura do player lottie */
+    margin-left: 300px;
+}
+
+
+
+
+
+
+/* Estilizando o link de currículo abaixo de tudo */
+.curriculum-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/*CURRICULOOOOO*/
+.iconecurriculum {
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+}
+
+.iconecurriculum a {
+    display: inline-block; /* Exibe o link como bloco para definir largura e altura */
+    padding: 10px 20px; /* Adiciona preenchimento interno */
+    background-color: #0077B5; /* Cor de fundo do link */
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Adiciona transição de cor de fundo */
+}
+
+.iconecurriculum a:hover {
+    background-color: #005885; /* Cor de fundo do link ao passar o mouse */
+}
+
+
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 500px;
+    height: 260px;
+    margin-bottom: 200px;
+    padding: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.project:hover .project-image {
+    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse sobre ela */
+}
+
+h3 {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.sobre-mim {
+    background: radial-gradient(circle, #334a97, #343b92);
+    width: 100%;
+    padding: 1px; /* Reduzi o padding para diminuir o tamanho vertical */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Centralizar elementos na vertical */
+    margin-left: 0px; /* Adicione margem à esquerda de todo o conteúdo */
+    border-radius: 20px;
+
+}
+.sobre-mim p {
+    font-size: 20px; /* Altere o tamanho da fonte */
+    text-align: justify;
+    color: #e9dfdf; /* Altere a cor do texto */
+    line-height: 1.2; /* Altere o espaçamento entre linhas, se necessário */
+    /* Outras propriedades de texto conforme necessário */
+    margin-right: 40px;
+}
+
+
+
+.sobre-mim img {
+    width: 300px;
+    border: 4px solid #ffffff; /* Adicione uma borda sólida */  
+    border-radius: 15%;
+    margin-left: 50px;
+    padding: 5px;
+    margin-right: 100px; /* Adicione margem à direita da imagem de perfil */
+
+}
+
+
+/* Estilizando o container */
+.icon-container {
+    display:inline-block;
+    align-items: center;
+    margin-left: 80px; /* Adicione margem à esquerda de todo o conteúdo */
+
+}
+
+/* Estilizando as imagens */
+.icon-container img {
+    height: 80px;
+    margin-right: 0px; /* Adapte o espaçamento conforme necessário */
+}
+.social-buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.social-icon-container {
+    text-align: center;
+}
+
+.social-icon {
+    width: 90px; /* Ajuste o tamanho conforme necessário */
+    height: 90px; /* Ajuste o tamanho conforme necessário */
+    margin: 5px; /* Adicione margem conforme necessário */
+    border: 2px solid #ffffff; /* Adicione uma borda sólida */
+    border-radius: 10px; /* Adicione bordas arredondadas conforme necessário */
+    cursor: pointer; /* Altere o cursor para indicar interatividade */
+    transition: background-color 0.3s ease; /* Adicione uma transição suave */
+       }
+
+       .social-icon:hover {
+        background-color: #333; /* Altere a cor de fundo ao passar o mouse */
+    }
+
+    .social-text {
+        margin-top: 5px; /* Adicione espaçamento entre o ícone e o texto */
+    }
+
+
