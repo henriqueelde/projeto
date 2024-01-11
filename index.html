@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <title>Elder Rodrigues - Desenvolvedor</title>
@@ -137,21 +137,54 @@ Espero poder contribuir de maneira significativa para o avanço da tecnologia, p
                 <h3>Página de vendas</h3>
                 <p>Perfeito para mostrar seu produto</p>
             </div>
+            <div class="portfolio2">
+                <div class="project">
+                    <a href="link_projeto1.html" target="_blank">
+                        <img src="loginimagem.JPG" alt="Projeto 1" class="project-image">
+                    </a>
+                    <h3>Tela de Login</h3>
+                    <p>Tela de login interativa e moderna.</p>
+                </div>
+              
+                 
     
-            <!-- Adicione mais projetos conforme necessário -->
     
         </div>
 
         <section id="contato">
             <h2>Contato</h2>
             <p>Fique à vontade para entrar em contato comigo. Responderei o mais rápido possível.</p>
-            <div class="social-buttons">
-                <a href="https://www.linkedin.com/seu-link-do-linkedin" target="_blank">Whatsapp</a>
-                <a href="https://github.com/seu-usuario-do-github" target="_blank">Email</a>
-
-            </div>
+            
         </section>
     </div>
+
+    <div class="formularioContato">
+        
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label>
+                <span><i class="icon icon-user-1"></i> Nome</span>
+                <input type="text" name="nome" required="">
+            </label>
+            
+            <label>
+                <span><i class="icon icon-email"></i> E-mail</span>
+                <input type="text" name="email" class="fade_8S">
+            </label>
+            <label>
+                <span><i class="icon icon-flag"></i> Assunto</span>
+                <input type="text" name="assunto" required="">
+            </label>
+            
+            <label>
+                <span><i class="icon icon-comment"></i> Mensagem</span>
+                 <textarea name="mensagem" rows="3" required=""></textarea> 
+            </label>
+           
+            <input type="hidden" name="acao" value="enviar" />
+            <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+        
+        </form>
+    </div><!--Formulario Contato-->
 
     <footer>
         <div class="container">
