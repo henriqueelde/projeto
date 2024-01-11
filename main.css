@@ -10,7 +10,7 @@ body {
 header {
     background-color: #1a1924; /* Cor de fundo azul escuro */
     color: #fff; /* Cor do texto branco */
-    padding: 10px 0; /* Adicionando preenchimento vertical de 10px */
+    padding:10px 0; /* Adicionando preenchimento vertical de 10px */
     text-align: center; /* Centralizando o conteúdo */
 }
 
@@ -78,7 +78,7 @@ nav a:hover {
     display: flex; /* Exibindo os elementos como um contêiner flexível */
     justify-content: space-between; /* Distribuindo o espaço entre os elementos */
     align-items: center; /* Alinhando os itens verticalmente no centro */
-    margin-left: 80px;
+    margin-left: auto;
     margin-bottom: 100px; /* Adicionando margem inferior de 200px */
 
 
@@ -128,7 +128,7 @@ nav a:hover {
 .lottie-container dotlottie-player {
     width: 300px; /* Definindo largura do player lottie */
     height: 300px; /* Definindo altura do player lottie */
-    margin-left: 300px;
+    margin-left: 30px;
 }
 
 
@@ -274,7 +274,9 @@ p {
     }
 
     #contato {
-text-align: center;
+    text-align: center;
+    color: black; /* Cor do texto */
+    margin-top: 2em; /* Adicionando margem superior */
 
     }
     .formularioContato { 
@@ -376,7 +378,7 @@ text-align: center;
         padding:0.8em 0em; 
         color:#fff; 
         font-size:1.3em; 
-        font-family:'open_sansbold'; 
+        font-family:'open_sansbold';    
         text-align: center;
         transition: 0.3s;   
     
@@ -387,6 +389,21 @@ text-align: center;
         background-color:#333; 
     
     }
+
+
+    /* Estilizando o rodapé */
+footer {
+    background-color: #333; /* Cor de fundo escura para a barra */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 0; /* Adicionando preenchimento vertical de 10px */
+    text-align: center; /* Centralizando o conteúdo */
+}
+
+/* Estilizando o texto dentro do rodapé */
+footer p {
+    margin: 0; /* Removendo margem do parágrafo */
+    font-size: 14px; /* Tamanho da fonte */
+}
 
 
   
